@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Toys for Cats - Cat Lovers Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+            width: 25em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cat Lovers Blog</h1>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="theme-toggle">Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="best-toys">
+            <h2>Best Toys for Cats</h2>
+            <img  style="width: 80em; height: 40em;" src="images/cat-playing-getty-845697720-3ca118e58ba0443995c897c4de64ae5e.jpg" alt="Cat Toys" class="toys-image">
+            <p>Keeping your cat entertained is essential for their physical and mental health. Here are some of the best toys for cats that will keep them engaged and happy.</p>
+
+            <article class="toy">
+                <h3>1. Interactive Laser Pointer</h3>
+                <img src="images/FroliCat-Multi-Laser-Interactive-Cat-Toy.png" alt="Laser Pointer" class="toy-image">
+                <p>Laser pointers are a classic toy that cats love. The moving light stimulates their hunting instincts and provides great exercise.</p>
+                <button class="read-more" onclick="toggleDetails('laser')">Read More</button>
+                <div id="laser" class="details">
+                    <p><strong>Tip:</strong> Always end the play session with a physical toy or treat to give your cat a sense of "catching" something.</p>
+                </div>
+            </article>
+
+            <article class="toy">
+                <h3>2. Feather Wand</h3>
+                <img src="images/Cat-Toy-Feather-Teaser-Hunting-Wild-2.webp" alt="Feather Wand" class="toy-image">
+                <p>Feather wands mimic the movement of birds, making them irresistible to cats. They are perfect for interactive playtime.</p>
+                <button class="read-more" onclick="toggleDetails('feather')">Read More</button>
+                <div id="feather" class="details">
+                    <p><strong>Tip:</strong> Use the wand to encourage your cat to jump and run, providing both mental and physical stimulation.</p>
+                </div>
+            </article>
+
+            <article class="toy">
+                <h3>3. Catnip Toys</h3>
+                <img src="images/Cat-sniffing-dried-catnip_resized.jpg" alt="Catnip Toy" class="toy-image">
+                <p>Catnip toys are filled with dried catnip, which can excite and relax cats. They are great for solo play.</p>
+                <button class="read-more" onclick="toggleDetails('catnip')">Read More</button>
+                <div id="catnip" class="details">
+                    <p><strong>Tip:</strong> Not all cats react to catnip, so test a small amount first to see if your cat enjoys it.</p>
+                </div>
+            </article>
+
+            <article class="toy">
+                <h3>4. Puzzle Toys</h3>
+                <img src="images/Main-1C.webp" alt="Puzzle Toy" class="toy-image">
+                <p>Puzzle toys challenge your cat's mind by requiring them to solve a problem to get a treat. They are excellent for mental stimulation.</p>
+                <button class="read-more" onclick="toggleDetails('puzzle')">Read More</button>
+                <div id="puzzle" class="details">
+                    <p><strong>Tip:</strong> Start with simple puzzles and gradually increase the difficulty as your cat gets better at solving them.</p>
+                </div>
+            </article>
+
+            <article class="toy">
+                <h3>5. Ball Track Toys</h3>
+                <img src="images/317_Tower-of-Tracks-Org_Angle-2.jpg" alt="Ball Track Toy" class="toy-image">
+                <p>Ball track toys feature balls that move around a track, providing endless entertainment for your cat.</p>
+                <button class="read-more" onclick="toggleDetails('ball-track')">Read More</button>
+                <div id="ball-track" class="details">
+                    <p><strong>Tip:</strong> Place the toy in a high-traffic area so your cat can play with it throughout the day.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Cat Lovers Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to toggle "Read More" details
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

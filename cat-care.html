@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Take Care of Your Cat - Cat Lovers Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+            width: 25em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cat Lovers Blog</h1>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="theme-toggle">Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="cat-care">
+            <h2>How to Take Care of Your Cat</h2>
+            <img  style="width: 80em; height: 40em;" src="images/cat_small.webp" alt="Cat Care" class="cat-care-image">
+            <p>Taking care of a cat involves more than just feeding and cuddling. Here are some essential tips to ensure your feline friend stays happy and healthy.</p>
+
+            <article class="care-tip">
+                <h3>1. Provide a Balanced Diet</h3>
+                <img src="images/kitten-eating-gravy-food_Elizabett_Shutterstock.jpg" alt="Cat Food" class="tip-image">
+                <p>Cats are obligate carnivores, which means they need a diet rich in animal protein. Feed your cat high-quality commercial cat food that meets their nutritional needs. Avoid giving them dog food or human food, as these can lack essential nutrients.</p>
+                <button class="read-more" onclick="toggleDetails('diet')">Read More</button>
+                <div id="diet" class="details">
+                    <p><strong>Tip:</strong> Wet food can help keep your cat hydrated, but dry food is good for dental health. A mix of both is ideal.</p>
+                </div>
+            </article>
+
+            <article class="care-tip">
+                <h3>2. Ensure Fresh Water</h3>
+                <img src="images/article-how-get-cat-drink-more-water-header@1.5x.jpg" alt="Cat Water" class="tip-image">
+                <p>Always provide fresh, clean water for your cat. Some cats prefer running water, so consider getting a cat water fountain to encourage them to drink more.</p>
+                <button class="read-more" onclick="toggleDetails('water')">Read More</button>
+                <div id="water" class="details">
+                    <p><strong>Tip:</strong> Place water bowls away from food bowls, as cats prefer their water source to be separate.</p>
+                </div>
+            </article>
+
+            <article class="care-tip">
+                <h3>3. Regular Vet Checkups</h3>
+                <img src="images/shutterstock_1923494045-1.jpg" alt="Cat Vet" class="tip-image">
+                <p>Take your cat to the vet at least once a year for a checkup. Regular visits help detect health issues early and ensure your cat is up-to-date on vaccinations.</p>
+                <button class="read-more" onclick="toggleDetails('vet')">Read More</button>
+                <div id="vet" class="details">
+                    <p><strong>Tip:</strong> Keep a record of your cat's vaccinations and medical history for easy reference.</p>
+                </div>
+            </article>
+
+            <article class="care-tip">
+                <h3>4. Keep the Litter Box Clean</h3>
+                <img src="images/transition1.jpg" alt="Cat Litter" class="tip-image">
+                <p>Cats are very clean animals and prefer a clean litter box. Scoop the litter box daily and change the litter regularly to keep your cat happy and prevent accidents.</p>
+                <button class="read-more" onclick="toggleDetails('litter')">Read More</button>
+                <div id="litter" class="details">
+                    <p><strong>Tip:</strong> Use unscented litter, as some cats are sensitive to strong smells.</p>
+                </div>
+            </article>
+
+            <article class="care-tip">
+                <h3>5. Provide Enrichment and Playtime</h3>
+                <img src="images/shutterstock_1091697740.avif" alt="Cat Play" class="tip-image">
+                <p>Cats need mental and physical stimulation. Provide toys, scratching posts, and interactive play sessions to keep your cat entertained and prevent boredom.</p>
+                <button class="read-more" onclick="toggleDetails('play')">Read More</button>
+                <div id="play" class="details">
+                    <p><strong>Tip:</strong> Rotate toys regularly to keep your cat interested.</p>
+                </div>
+            </article>
+
+            <article class="care-tip">
+                <h3>6. Groom Your Cat Regularly</h3>
+                <img src="images/ULPS-Cat-grooming-AdobeStock_313891439-1080x675.jpg" alt="Cat Grooming" class="tip-image">
+                <p>Brush your cat's fur regularly to prevent matting and reduce shedding. Long-haired cats may need daily brushing, while short-haired cats can be brushed once a week.</p>
+                <button class="read-more" onclick="toggleDetails('groom')">Read More</button>
+                <div id="groom" class="details">
+                    <p><strong>Tip:</strong> Use a brush suitable for your cat's fur type to avoid discomfort.</p>
+                </div>
+            </article>
+
+            <article class="care-tip">
+                <h3>7. Create a Safe Environment</h3>
+                <img src="images/how-to-safety-leave-cat-alone-img_article-head.jpg" alt="Cat Safety" class="tip-image">
+                <p>Ensure your home is safe for your cat. Keep toxic plants, chemicals, and small objects out of reach. Provide cozy spots for your cat to rest and hide.</p>
+                <button class="read-more" onclick="toggleDetails('safe')">Read More</button>
+                <div id="safe" class="details">
+                    <p><strong>Tip:</strong> Use cat-proof locks on cabinets containing harmful substances.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Cat Lovers Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to toggle "Read More" details
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+
+         </script>
+         <script src="script.js"></script>
+</body>
+</html>
